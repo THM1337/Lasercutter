@@ -13,9 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        lasercutter.cpp
+        lasercutter.cpp \
+    Parser.cpp
 
-HEADERS  += lasercutter.h
+HEADERS  += lasercutter.h \
+    Parser.h
 
 FORMS    += lasercutter.ui
 
