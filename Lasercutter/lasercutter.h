@@ -15,6 +15,9 @@ public:
     explicit Lasercutter(QWidget *parent = 0);
     ~Lasercutter();
 
+private slots:
+    void on_bt_browse_clicked();
+
 private:
     Ui::Lasercutter *ui;
 };
