@@ -7,5 +7,5 @@ int main(int argc, char *argv[])
     Lasercutter w;
     w.show();
 
-    return a.exec();
+    return a.exec(); //MÖÖÖÖP
 }
