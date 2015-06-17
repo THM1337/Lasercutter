@@ -40,9 +40,27 @@
      <bool>true</bool>
     </property>
    </widget>
+   <widget class="zeichenBrett" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>291</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>zeichenBrett</class>
+   <extends>QWidget</extends>
+   <header>zeichenbrett.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

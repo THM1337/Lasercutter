@@ -1,11 +1,11 @@
-#include "lasercutter.h"
+#include "mainwindow.h"
 #include <QApplication>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    Lasercutter w;
+    MainWindow w;
     w.show();
 
-    return a.exec(); //MÖÖÖÖP
+    return a.exec();
 }

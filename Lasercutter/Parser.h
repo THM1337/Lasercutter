@@ -1,25 +1,29 @@
-#pragma once
+#ifndef PARSER_H
+#define PARSER_H
+
+#include <QWidget>
+#include <stdio.h>
 #include <string>
-#include <fstream>
-#include <vector>
+#include "Lasercutter.h"
+
+
+using namespace std;
 
 class Parser
 {
-public:
-	// Variablen
-	std::vector < std::string > op_Codes;
-	std::string path;
-	std::ifstream fi;
-	// Konstr,- Destruktor
-	Parser();
-	Parser(std::string);
-	virtual ~Parser();
-	// Methoden
-	void readOPCode_fromFile();
-	void getCoordinates(int pos_in_vec, int* x, int* y);
 private:
-	std::vector <std::string> dispatch_Table;
-	void init_dispatch();
-	bool validOPCode(std::string*);
+    string Pfad;
+    Lasercutter *laser;
+
+public:
+    Parser(string Pfadangabe, Lasercutter *laser);
+    void checkOPs();
+    void getDigits(char *pLine, int line_anz);
+    int getLines();
+
+protected:
+    int Arraygroesse;
 
 };
+
+#endif // PARSER_H
